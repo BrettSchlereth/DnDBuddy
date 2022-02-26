@@ -1,0 +1,39 @@
+
+.root {
+    -fx-font-family: "Poor Richard";
+    -fx-font-size: 20px;
+}
+
+.horizontal-tab-pane *.tab {
+    /* Determines the tab height */
+    -fx-pref-width: 60px;
+    /* Everything else is just aesthetics */
+    -fx-padding: 20px;
+    -fx-background-insets: 2 -1 -1 -1;
+    -fx-border-width: 1 0 1 1;
+    -fx-border-color: rgb(55, 55, 56) black black black;
+}
+.horizontal-tab-pane *.tab:selected {
+    -fx-background-color: rgb(45, 45, 46);
+    -fx-border-color: rgb(75, 125, 200) black rgb(45, 45, 46) black;
+}
+
+.button {
+    -fx-background-color: d3c8b4;
+    -fx-border-width: 1.5px;
+    -fx-border-color: black;
+    -fx-font-size: 16px;
+}
+
+.button:hover {
+    -fx-background-color: white;
+    -fx-border-width: 1.5px;
+    -fx-border-color: black;
+}
+
+
+
+.stage {
+    -fx-background-color: d3bb8d;
+}
+

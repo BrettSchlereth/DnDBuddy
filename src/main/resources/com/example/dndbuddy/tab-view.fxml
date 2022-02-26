@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.HBox?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.dndbuddy.HelloController">
+    <VBox alignment="CENTER" spacing="20.0">
+      <padding>
+          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+      </padding>
+
+      <TabPane
+        tabClosingPolicy="UNAVAILABLE">
+          <Tab text="Race">
+              <HBox>
+                  <VBox>
+                    <Button text="Dragonborn" onAction="#raceSelected" userData="Dragonborn"/>
+                    <Button text="Hill Dwarf" onAction="#raceSelected" userData="Hill Dwarf"/>
+                    <Button text="Mountain Dwarf" onAction="#raceSelected" userData="Mountain Dwarf"/>
+                    <Button text="High Elf" onAction="#raceSelected" userData="High Elf"/>
+                    <Button text="Wood Elf" onAction="#raceSelected" userData="Wood Elf"/>
+                    <Button text="Drow" onAction="#raceSelected" userData="Drow"/>
+                      <Button text="Deep Gnome" onAction="#raceSelected" userData="Deep Gnome"/>
+                      <Button text="Forest Gnome" onAction="#raceSelected" userData="Forest Gnome"/>
+                      <Button text="Rock Gnome" onAction="#raceSelected" userData="Rock Gnome"/>
+                      <Button text="Half-Elf" onAction="#raceSelected" userData="Half-Elf"/>
+                      <Button text="Lightfoot Halfling" onAction="#raceSelected" userData="Lightfoot Halfling"/>
+                      <Button text="Stout Halfling" onAction="#raceSelected" userData="Stout Halfling"/>
+                      <Button text="Half Orc" onAction="#raceSelected" userData="Half Orc"/>
+                      <Button text="Human" onAction="#raceSelected" userData="Human"/>
+                      <Button text="Tiefling" onAction="#raceSelected" userData="Tiefling"/>
+                  </VBox>
+                  <VBox>
+                      <Text fx:id="CurrentRace" text="Current Race: "/>
+                      <Text fx:id="RaceContent" wrappingWidth="400" />
+                  </VBox>
+
+              </HBox>
+          </Tab>
+          <Tab text="Class">
+
+          </Tab>
+          <Tab text="Background">
+
+          </Tab>
+      </TabPane>
+    </VBox>
+</AnchorPane>
